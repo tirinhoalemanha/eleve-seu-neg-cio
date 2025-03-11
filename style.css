@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
+    background-color: #ffffff;
+    color: #f6f3f3;
+    padding: 20px;
+    scrollbar-3dlight-color: #fbfdff;
+}
+
+
+
+
+.cabecalho {
+    width: 100%;
+    padding: 10px 0;
+    /*Fundo semi-transparente */
+    background-color: rgba(61, 65, 62, 0.5); /* Fundo semi-transparente */
+    text-align: center;
+    font-size: 24px;
+
+}
+
+.cabecalho__menu {
+    display: flex;
+    
+    gap: 80px;
+    justify-content: center;
+    align-items: center;
+}
+
+.rodape {
+    width: 100%;
+    padding: 10px 0;
+    /*Fundo semi-transparente */
+    background-color: rgba(49, 52, 50, 0.5); /* Fundo semi-transparente */
+    text-align: center;
+    font-size: 24px;
+
+}
+
+.cabecalho__menu__link {
+    padding: 10px 20px;
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+
+.apresentacao {
+    padding: 40px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.apresentacao__conteudo {
+    max-width: 615px;
+}
+
+.apresentacao__conteudo__titulo {
+    font-size: 2.5rem;
+    font-family: 'Krona One', sans-serif;
+    margin-bottom: 20px;
+}
+
+.titulo-destaque {
+    color: #17da62; /* Cor de destaque */
+}
+
+.apresentacao__conteudo__texto {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.apresentacao__links {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.apresentacao__link__subtitulo {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.apresentacao__links__link, .apresentacao__links__botao {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #17da62;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 1rem;
+    border-radius :  5px ;
+    transition: background-color 0.3s ease;
+}
+
+.apresentacao__links__link:hover, .apresentacao__links__botao:hover {
+    background-color: #12b450;
+}
+
+.apresentacao__imagem {
+    max-width: 400px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    line-height  : 1.6;
+    background-color:  #3375c1;
+    color: #333;
+    padding: 20px;
+    scrollbar-3dlight-color: #333;
+}
+
+.apresentacao {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.sobre, .habilidades, .experiencia {
+    background-color: #9cdfec;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.apresentacao__conteudo__texto__titulo {
+    font-family: 'Krona One', sans-serif;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #222;
+}
+
+.apresentacao__conteudo__texto {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.habilidades__titulo, .experiencia__titulo {
+    font-family: 'Krona One', sans-serif;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #222;
+}
+
+.habilidades__lista {
+    list-style-type: none;
+    padding-left: 20px;
+}
+
+.habilidades__lista li {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.experiencia__texto {
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+.rodape {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 1rem;
+    color: #777;
+}
+
+ /* deixa tudo conforme a nessecidade do celular */
+/* responsividade */
+
+@media (max-width: 768px) {
+
+    .cabecalho {
+        padding: 10%;
+        font-size: 20px;
+    }
+    .cabecalho__menu {
+        justify-self: center;
+        flex-direction: column;
+        gap: 20px; 
+    }
+
+
+    .apresentacao {
+        flex-direction: column-reverse;
+        padding: auto;
+        gap: 20px;
+    }
+
+    .apresentacao__conteudo {
+        text-align: center;
+        padding: auto;
+
+    }
+
+    .apresentacao__imagem {
+        margin: 0 auto;
+    }
+
+    .apresentacao__links {
+        flex-direction: row;
+        gap: 20px;
+
+        
+    }
+
+    .apresentacao__links__link, .apresentacao__links__botao {
+
+
+        padding: 2% 1%;
+        font-size: 1rem;
+        
+
+
+    }
+    
+}
